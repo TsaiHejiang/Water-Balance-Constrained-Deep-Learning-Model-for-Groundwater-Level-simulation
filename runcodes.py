@@ -85,7 +85,7 @@ print(f"The training data set is from {training_start} to {training_end}, with a
 print(f"The testing data set is from {testing_start} to {testing_end}, with a shape of {test_set.shape}")
 
 def generate_train_test(train_set, test_set, wrap_length):
-    train_x_np = train_set.values[:, [0, 1, 2, 3, 4, 5]]#[:,[1,2,3]]
+    train_x_np = train_set.values[:, [0, 1, 2, 3, 4, 5]]
     train_y_np = train_set.values[:, -1:]
     test_x_np = test_set.values[:, [0, 1, 2, 3, 4, 5]]
     test_y_np = test_set.values[:, -1:]
