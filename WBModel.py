@@ -365,7 +365,7 @@ class ConvLayer(Layer):
         super(ConvLayer, self).build(input_shape)
 
     def call(self, inputs):
-        #self.kernel = K.concatenate((self.kernel_black, self.kernel_white), axis=1)
+        
         outputs = K.conv1d(inputs, self.kernel, strides=1, padding=self.padding)
         outputs = K.elu(K.bias_add(outputs, self.bias))
         return outputs
