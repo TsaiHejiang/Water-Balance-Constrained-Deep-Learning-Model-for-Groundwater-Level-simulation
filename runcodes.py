@@ -79,12 +79,7 @@ testing_end= '2014-09-30'
 train_set = hydrodata[hydrodata.index.isin(pd.date_range(training_start, training_end))]
 test_set = hydrodata[hydrodata.index.isin(pd.date_range(testing_start, testing_end))]
 
-#try reducing the input dimension 
 
-#train_set = train_set1.iloc[:,[0,1,5]]
-#test_set = test_set1.iloc[:,[0,1,5]]
-
-#
 
 print(f"The training data set is from {training_start} to {training_end}, with a shape of {train_set.shape}")
 print(f"The testing data set is from {testing_start} to {testing_end}, with a shape of {test_set.shape}")
