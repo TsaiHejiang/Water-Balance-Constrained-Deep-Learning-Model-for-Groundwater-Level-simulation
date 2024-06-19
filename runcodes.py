@@ -14,7 +14,7 @@ from matplotlib import pyplot as plt
 from datetime import datetime, timedelta
 
 ## Import libraries developed by this study
-from WBModel import PRNNLayer, ConvLayer, ScaleLayer# RegionalPRNNLayer
+from WBModel import PRNNLayer, ConvLayer, ScaleLayer
 from hydrodata import DataforIndividual
 import hydroutils
 
